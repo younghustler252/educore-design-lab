@@ -174,7 +174,15 @@ document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',(
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.tab-panel').forEach(x=>x.hidden=x.id!=='tab-'+b.dataset.tab)}));
 const drawer=document.getElementById('mobileDrawer'),bg=document.getElementById('drawerBg');function openDrawer(){drawer.classList.add('open');bg.classList.add('open')}function closeDrawer(){drawer.classList.remove('open');bg.classList.remove('open')}
 document.getElementById('openDrawer').addEventListener('click',openDrawer);document.getElementById('closeDrawer').addEventListener('click',closeDrawer);bg.addEventListener('click',closeDrawer);
-function filterRows(){let q=document.getElementById('studentSearch').value.toLowerCase();document.querySelectorAll('#studentRows tr').forEach(r=>r.style.display=r.dataset.search.includes(q)?'':'none')}
+function filterRows(){
+ const q=document.getElementById('studentSearch').value.trim().toLowerCase();
+ document.querySelectorAll('#studentRows tr').forEach(row=>{
+  row.style.display=(row.dataset.search||row.textContent).toLowerCase().includes(q)?'':'none';
+ });
+ document.querySelectorAll('.mobile-student-list .student-card').forEach(card=>{
+  card.style.display=card.textContent.toLowerCase().includes(q)?'':'none';
+ });
+}
 function resetProfile(){document.getElementById('firstName').value='Amara';document.getElementById('lastName').value='Okafor';notify('Profile changes discarded')}
 </script>
 </body></html>
