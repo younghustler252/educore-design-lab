@@ -45,6 +45,56 @@ svg.i{width:19px;height:19px;stroke:currentColor;stroke-width:1.8;fill:none;stro
 @media(max-width:760px){.dashboard-preview-bar{align-items:stretch;flex-direction:column;padding:12px;margin-bottom:15px}.dashboard-preview-bar label{align-items:flex-start;flex-direction:column;gap:6px}.dashboard-preview-bar select{width:100%;min-width:0}.role-intro{align-items:flex-start;flex-direction:column;margin-bottom:15px}.role-intro h1{font-size:23px}.role-grid{gap:9px;margin-bottom:12px}.role-stat{padding:12px;border-radius:12px}.role-stat strong{font-size:20px;margin:7px 0 3px}.role-stat-top{font-size:8px}.role-stat-icon{width:27px;height:27px}.role-panels{gap:11px}.role-panel{padding:13px;border-radius:13px}.role-action-grid{gap:7px}.role-action{padding:10px}.role-list-item{gap:8px}.role-list-item time{display:none}}
 @media(prefers-reduced-motion:reduce){.role-action,.page{animation:none!important;transition:none!important}}
 
+
+/* School administrator dashboard detail */
+.admin-overview{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.8fr);gap:14px;margin:0 0 14px}
+.admin-panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:17px;box-shadow:var(--shadow);min-width:0}
+.admin-panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:15px}
+.admin-panel-head h3{font:700 13px Manrope;margin:0}
+.admin-panel-head p{font-size:9px;color:#8c99ad;margin:5px 0 0}
+.admin-period{border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 9px;color:#65748d;font-size:9px;outline:none}
+.admin-chart{width:100%;height:178px;display:block;overflow:visible}
+.chart-legend{display:flex;gap:15px;flex-wrap:wrap;margin-top:5px}
+.chart-legend span{font-size:8px;color:#8794aa;display:flex;align-items:center;gap:6px}
+.legend-dot{width:7px;height:7px;border-radius:50%;display:inline-block;background:#4169e8}
+.legend-dot.mint{background:#16b88d}
+.finance-total{display:flex;align-items:flex-end;justify-content:space-between;gap:8px;margin:2px 0 14px}
+.finance-total strong{font:800 25px Manrope;letter-spacing:-.8px}
+.finance-total small{font-size:9px;color:#8b98ad}
+.progress-track{height:9px;background:#edf1f7;border-radius:20px;overflow:hidden}
+.progress-fill{height:100%;width:68%;background:linear-gradient(90deg,#4169e8,#7894ff);border-radius:20px}
+.finance-split{display:flex;justify-content:space-between;gap:10px;margin-top:10px}
+.finance-split div{min-width:0}
+.finance-split strong{display:block;font:700 12px Manrope}
+.finance-split small{display:block;color:#8b98ad;font-size:8px;margin-top:3px}
+.admin-lower{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:14px}
+.enrolment-bars{display:grid;gap:13px}
+.enrolment-row{display:grid;grid-template-columns:75px 1fr 28px;align-items:center;gap:9px}
+.enrolment-row label{font-size:9px;color:#687790}
+.enrolment-row strong{font-size:9px;text-align:right}
+.enrolment-track{height:8px;background:#f0f3f8;border-radius:20px;overflow:hidden}
+.enrolment-track span{display:block;height:100%;border-radius:20px;background:#7390f7}
+.agenda-list{display:grid;gap:0}
+.agenda-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #eff2f7}
+.agenda-item:last-child{border-bottom:0;padding-bottom:0}
+.agenda-time{width:48px;flex:none;font-size:9px;font-weight:700;color:#4169e8;padding-top:2px}
+.agenda-copy strong{display:block;font-size:9px}
+.agenda-copy small{display:block;color:#8c99ad;font-size:8px;margin-top:4px;line-height:1.4}
+.agenda-tag{margin-left:auto;align-self:flex-start;font-size:7px;padding:4px 6px;border-radius:20px;background:#edf2ff;color:#4169e8;white-space:nowrap}
+.admin-shortcuts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 14px}
+.admin-shortcut{border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px;text-align:left;display:flex;align-items:center;gap:9px;min-width:0;transition:.18s}
+.admin-shortcut:hover{border-color:#bdccff;transform:translateY(-1px);box-shadow:0 5px 14px #4169e812}
+.admin-shortcut>span{width:31px;height:31px;display:grid;place-items:center;border-radius:9px;background:#edf2ff;color:#4169e8;font-size:15px;flex:none}
+.admin-shortcut strong{display:block;font-size:9px;color:#34435d}
+.admin-shortcut small{display:block;color:#929eb0;font-size:8px;margin-top:3px}
+.admin-alert{display:flex;align-items:center;gap:10px;padding:11px 12px;border:1px solid #f4e5c9;background:#fffaf1;border-radius:11px;margin:0 0 14px}
+.admin-alert>span{width:28px;height:28px;border-radius:9px;background:#fff0d6;color:#c68720;display:grid;place-items:center;flex:none}
+.admin-alert strong{font-size:9px;display:block}
+.admin-alert small{font-size:8px;color:#8b98ad;display:block;margin-top:3px}
+.admin-alert button{margin-left:auto;border:0;background:transparent;color:#4169e8;font-size:8px;font-weight:700;white-space:nowrap}
+@media(max-width:900px){.admin-overview,.admin-lower{grid-template-columns:1fr}.admin-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.admin-panel{padding:14px;border-radius:13px}.admin-chart{height:160px}.admin-shortcuts{gap:8px}.admin-shortcut{padding:10px;gap:7px}.admin-shortcut>span{width:28px;height:28px}.admin-shortcut strong{font-size:8px}.finance-total strong{font-size:22px}.enrolment-row{grid-template-columns:65px 1fr 25px}}
+
 </style>
 </head>
 <body>
@@ -202,9 +252,44 @@ const dashboardRoles={
 };
 function renderRoleDashboard(key){
  const d=dashboardRoles[key]||dashboardRoles.school_admin;
- document.getElementById('roleDashboard').innerHTML=`
- <div class="role-intro"><div><h1>${d.name}</h1><p>${d.description}</p><p style="margin-top:5px;font-size:9px;color:#a0aabd">${d.school}</p></div><span class="role-tag">● ${d.role}</span></div>
- <div class="role-grid">${d.stats.map((s,i)=>`<div class="role-stat"><div class="role-stat-top">${s[0]}<span class="role-stat-icon">${s[3]}</span></div><strong>${s[1]}</strong><small><em>${s[2].startsWith('↑')?s[2].split(' ')[0]+' ':''}</em>${s[2].startsWith('↑')?s[2].slice(2):s[2]}</small></div>`).join('')}</div>
+ const intro=`<div class="role-intro"><div><h1>${d.name}</h1><p>${d.description}</p><p style="margin-top:5px;font-size:9px;color:#a0aabd">${d.school}</p></div><span class="role-tag">● ${d.role}</span></div>`;
+ const stats=`<div class="role-grid">${d.stats.map(s=>`<div class="role-stat"><div class="role-stat-top">${s[0]}<span class="role-stat-icon">${s[3]}</span></div><strong>${s[1]}</strong><small><em>${s[2].startsWith('↑')?s[2].split(' ')[0]+' ':''}</em>${s[2].startsWith('↑')?s[2].slice(2):s[2]}</small></div>`).join('')}</div>`;
+ if(key==='school_admin'){
+  document.getElementById('roleDashboard').innerHTML=intro+stats+`
+  <div class="admin-alert"><span>!</span><div><strong>12 items need your attention</strong><small>4 pending admissions · 5 fee follow-ups · 3 staff requests</small></div><button type="button" onclick="notify('Attention centre opened · Demo preview')">Review items →</button></div>
+  <div class="admin-shortcuts">
+   <button class="admin-shortcut" onclick="notify('New student workflow opened · Demo preview')"><span>＋</span><div><strong>Add a student</strong><small>Start an enrolment</small></div></button>
+   <button class="admin-shortcut" onclick="notify('Staff directory opened · Demo preview')"><span>♙</span><div><strong>Manage staff</strong><small>86 teaching staff</small></div></button>
+   <button class="admin-shortcut" onclick="notify('Attendance register opened · Demo preview')"><span>◷</span><div><strong>View attendance</strong><small>Today's registers</small></div></button>
+   <button class="admin-shortcut" onclick="notify('Fee payment workflow opened · Demo preview')"><span>₦</span><div><strong>Record payment</strong><small>Capture a transaction</small></div></button>
+  </div>
+  <div class="admin-overview">
+   <section class="admin-panel"><div class="admin-panel-head"><div><h3>Attendance overview</h3><p>Daily attendance across the school</p></div><select class="admin-period" aria-label="Attendance period" onchange="notify('Showing '+this.value+' attendance · Demo data')"><option>This week</option><option>This month</option><option>This term</option></select></div>
+    <svg class="admin-chart" viewBox="0 0 620 190" role="img" aria-label="Attendance trend chart showing attendance improving from 91 to 95 percent"><defs><linearGradient id="attendanceFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#4169e8" stop-opacity=".18"/><stop offset="1" stop-color="#4169e8" stop-opacity="0"/></linearGradient></defs>
+     <g stroke="#edf1f7" stroke-width="1"><path d="M42 25H605M42 65H605M42 105H605M42 145H605"/></g><g fill="#9aa6b8" font-size="10"><text x="4" y="28">100%</text><text x="10" y="68">95%</text><text x="10" y="108">90%</text><text x="10" y="148">85%</text></g>
+     <path d="M45 119 L135 103 L225 110 L315 78 L405 86 L495 60 L595 51 L595 150 L45 150Z" fill="url(#attendanceFill)"/><path d="M45 119 L135 103 L225 110 L315 78 L405 86 L495 60 L595 51" fill="none" stroke="#4169e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+     <g fill="#fff" stroke="#4169e8" stroke-width="2"><circle cx="45" cy="119" r="4"/><circle cx="135" cy="103" r="4"/><circle cx="225" cy="110" r="4"/><circle cx="315" cy="78" r="4"/><circle cx="405" cy="86" r="4"/><circle cx="495" cy="60" r="4"/><circle cx="595" cy="51" r="4"/></g><g fill="#929eb0" font-size="10" text-anchor="middle"><text x="45" y="174">Mon</text><text x="135" y="174">Tue</text><text x="225" y="174">Wed</text><text x="315" y="174">Thu</text><text x="405" y="174">Fri</text><text x="495" y="174">Sat</text><text x="595" y="174">Sun</text></g>
+    </svg><div class="chart-legend"><span><i class="legend-dot"></i> Attendance rate</span><span>School target: 95%</span></div>
+   </section>
+   <section class="admin-panel"><div class="admin-panel-head"><div><h3>Fee collection</h3><p>Current academic term</p></div><span class="role-tag">On track</span></div>
+    <div class="finance-total"><div><small>Collected so far</small><strong>₦18.6m</strong></div><small>of ₦27.3m expected</small></div><div class="progress-track"><div class="progress-fill"></div></div>
+    <div class="finance-split"><div><strong>₦8.7m</strong><small>Outstanding</small></div><div><strong>68%</strong><small>Collection rate</small></div><div><strong>312</strong><small>Open invoices</small></div></div>
+    <div style="border-top:1px solid #eff2f7;margin-top:17px;padding-top:13px"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:9px;color:#7d8aa1">Latest payment</span><b style="font-size:9px">₦185,000</b></div><small style="display:block;color:#98a3b4;font-size:8px;margin-top:5px">Adaobi N. · Tuition · 09:18 AM</small></div>
+   </section>
+  </div>
+  <div class="admin-lower">
+   <section class="admin-panel"><div class="admin-panel-head"><div><h3>Enrolment by school level</h3><p>1,284 active students · 32 classes</p></div><button class="outline-btn" onclick="notify('Enrolment report opened · Demo preview')">View report</button></div>
+    <div class="enrolment-bars"><div class="enrolment-row"><label>Early years</label><div class="enrolment-track"><span style="width:28%"></span></div><strong>184</strong></div><div class="enrolment-row"><label>Primary</label><div class="enrolment-track"><span style="width:74%"></span></div><strong>612</strong></div><div class="enrolment-row"><label>Junior sec.</label><div class="enrolment-track"><span style="width:42%"></span></div><strong>286</strong></div><div class="enrolment-row"><label>Senior sec.</label><div class="enrolment-track"><span style="width:31%"></span></div><strong>202</strong></div></div>
+   </section>
+   <section class="admin-panel"><div class="admin-panel-head"><div><h3>Today's agenda</h3><p>Thursday, 19 November</p></div><button class="outline-btn" onclick="notify('School calendar opened · Demo preview')">Calendar</button></div>
+    <div class="agenda-list"><div class="agenda-item"><span class="agenda-time">09:30</span><div class="agenda-copy"><strong>Admissions review</strong><small>Administration office · 4 applications</small></div><span class="agenda-tag">In progress</span></div><div class="agenda-item"><span class="agenda-time">11:00</span><div class="agenda-copy"><strong>Academic leadership meeting</strong><small>Conference room · Heads of department</small></div></div><div class="agenda-item"><span class="agenda-time">13:30</span><div class="agenda-copy"><strong>Parent engagement call</strong><small>Virtual · Year 7 representatives</small></div></div><div class="agenda-item"><span class="agenda-time">15:00</span><div class="agenda-copy"><strong>Approve staff requests</strong><small>HR desk · 3 requests pending</small></div><span class="agenda-tag">Action needed</span></div></div>
+   </section>
+  </div>
+  <section class="admin-panel" style="margin-top:14px"><div class="admin-panel-head"><div><h3>Recent school activity</h3><p>Latest updates from across your school</p></div><button class="outline-btn" onclick="notify('Full activity feed opened · Demo preview')">View all activity</button></div><div class="role-list">${d.left.map(item=>`<div class="role-list-item"><span class="role-list-icon">${item[0]}</span><div class="role-list-copy"><strong>${item[1]}</strong><small>${item[2]}</small></div><time>${item[3]}</time></div>`).join('')}</div></section>
+  <p class="role-empty-note">Dashboard preview uses sample information. In the live product, data and available actions will be scoped to the signed-in account's school, branch and permissions.</p>`;
+  return;
+ }
+ document.getElementById('roleDashboard').innerHTML=intro+stats+`
  <div class="role-panels"><div class="role-panel"><div class="role-panel-head"><h3>${d.leftTitle}</h3><small>Today · Demo data</small></div><div class="role-list">${d.left.map(item=>`<div class="role-list-item"><span class="role-list-icon">${item[0]}</span><div class="role-list-copy"><strong>${item[1]}</strong><small>${item[2]}</small></div><time>${item[3]}</time></div>`).join('')}</div></div>
  <div class="role-panel"><div class="role-panel-head"><h3>${d.rightTitle}</h3><small>Quick access</small></div><div class="role-action-grid">${d.actions.map(a=>`<button class="role-action" type="button" onclick="notify('${a[1]} · Demo preview')"><span>${a[0]}</span><strong>${a[1]}</strong><small>${a[2]}</small></button>`).join('')}</div><div class="role-empty-note">This is a role-specific preview using sample information. Available modules in the live product depend on the signed-in account's permissions.</div></div></div>`;
 }
