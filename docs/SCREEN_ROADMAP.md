@@ -41,3 +41,20 @@ A screen is ready for approval when:
 - Accessibility basics are addressed.
 - It follows the approved EDUCORE visual language.
 - It does not imply a backend integration that does not exist.
+
+## Phase 4 — Authentication & onboarding
+
+| Screen / journey | Status | Next action |
+|---|---|---|
+| Login and account-path selection | First prototype built | Review role labels and login states against production auth |
+| School self-registration | First prototype built | Confirm required fields, verification, and approval policy |
+| Staff invitation / access request | First prototype built | Align invitation and membership flows with backend |
+| Student account activation | First prototype built | Confirm matching fields and guardian-assisted activation |
+| Parent / guardian linking | First prototype built | Confirm family-link and relationship verification rules |
+| Email OTP verification | First prototype built | Match production delivery, expiry, resend, and rate-limit behavior |
+| Forgot / reset password | First prototype built | Match production recovery endpoints and security rules |
+| Pending / approved states | First prototype built | Confirm review statuses and notification behavior |
+
+Prototype location: `prototypes/auth-flow/index.html`.
+
+All journeys are mock-only. The prototype does not authenticate users, send email, create school tenants, validate invitations, or approve accounts. Account-path selection is not permission assignment.
